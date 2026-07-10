@@ -892,3 +892,75 @@ h2 {
 .hub-panel .eyebrow {
   background: rgba(8, 5, 13, 0.44);
 }
+
+
+/* Page 3 music controls */
+.music-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: -0.6rem 0 1.35rem;
+  position: relative;
+  z-index: 2;
+}
+
+.music-button {
+  border: 1px solid rgba(236, 218, 255, 0.34);
+  border-radius: 999px;
+  padding: 0.72rem 1.15rem;
+  color: rgba(255,255,255,0.94);
+  background:
+    linear-gradient(180deg, rgba(31, 14, 43, 0.64), rgba(9, 6, 15, 0.52));
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(0.76rem, 1vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow:
+    0 0.75rem 1.8rem rgba(0,0,0,0.38),
+    inset 0 0 0 1px rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.music-button:hover,
+.music-button:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255, 234, 255, 0.8);
+  background:
+    linear-gradient(180deg, rgba(69, 25, 95, 0.76), rgba(15, 8, 24, 0.58));
+  box-shadow:
+    0 1rem 2rem rgba(0,0,0,0.48),
+    0 0 1.2rem rgba(158, 80, 213, 0.24);
+}
+
+.music-button.is-muted {
+  color: rgba(231, 218, 244, 0.66);
+  border-color: rgba(231, 218, 244, 0.18);
+  background: rgba(8, 5, 13, 0.34);
+}
+
+.crank-button {
+  border-color: rgba(255, 192, 226, 0.46);
+  background:
+    linear-gradient(180deg, rgba(159, 44, 105, 0.72), rgba(69, 21, 98, 0.58));
+}
+
+.crank-button.is-cranked {
+  border-color: rgba(255, 231, 248, 0.86);
+  box-shadow:
+    0 1rem 2.1rem rgba(0,0,0,0.5),
+    0 0 1.6rem rgba(203, 74, 141, 0.36);
+}
+
+@media (max-width: 760px) {
+  .music-controls {
+    margin: 0 0 1rem;
+  }
+
+  .music-button {
+    flex: 1 1 100%;
+  }
+}

@@ -7,6 +7,7 @@
   <meta name="description" content="The Nightshade Academy — An Elite Finishing and Boarding School for Monsters." />
   <link rel="preload" as="image" href="assets/images/nightshade-academy-sign.webp" />
   <link rel="preload" as="image" href="assets/images/headmistress-welcome.webp" />
+  <link rel="preload" as="audio" href="assets/audio/nightshade-academy-anthem.mp3" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -67,6 +68,15 @@
           student profiles, lessons, and narrated scenes.
         </p>
 
+        <div class="music-controls" aria-label="Academy anthem controls">
+          <button class="music-button" id="musicMuteButton" type="button" aria-pressed="false">
+            Mute Music
+          </button>
+          <button class="music-button crank-button" id="musicCrankButton" type="button">
+            Crank It Up
+          </button>
+        </div>
+
         <nav class="hub-grid" aria-label="Academy sections">
           <a href="#" class="hub-card">
             <span>01</span>
@@ -106,6 +116,7 @@
   </main>
 
   <audio id="introNarration" src="assets/audio/opening-greeting.mp3" preload="auto"></audio>
+  <audio id="academyAnthem" src="assets/audio/nightshade-academy-anthem.mp3" preload="auto" loop></audio>
   <script src="script.js"></script>
 </body>
 </html>
