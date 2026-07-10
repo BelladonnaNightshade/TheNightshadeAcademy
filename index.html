@@ -6,6 +6,7 @@
   <title>The Nightshade Academy</title>
   <meta name="description" content="The Nightshade Academy — An Elite Finishing and Boarding School for Monsters." />
   <link rel="preload" as="image" href="assets/images/nightshade-academy-sign.webp" />
+  <link rel="preload" as="image" href="assets/images/headmistress-welcome.webp" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -31,32 +32,28 @@
     </section>
 
     <section class="intro-screen" id="intro" aria-label="Headmistress Belladonna introduction">
-      <div class="intro-card">
-        <p class="eyebrow">A formal welcome from</p>
-        <h1>Headmistress Belladonna Nightshade</h1>
-        <p class="subtitle">Vampire Queen · Founder · Keeper of Standards</p>
+      <div class="intro-art-wrap">
+        <img
+          src="assets/images/headmistress-welcome.webp"
+          alt="A formal welcome from Headmistress Belladonna Nightshade, vampire queen, founder, and keeper of standards."
+          class="intro-art"
+        />
 
-        <div class="speech-box" id="speechBox">
-          <p>
-            Welcome to <strong>The Nightshade Academy</strong> — an elite finishing and boarding school for monsters.
-          </p>
-          <p>
-            Here, we teach elegance, discipline, menace, and distinction.
-          </p>
-          <p>
-            Our students do not merely frighten. They do so with style.
-          </p>
-          <p>
-            If you are prepared to learn, proceed inside.
-          </p>
-          <p>
-            If not, the gate is behind you.
-          </p>
+        <div class="intro-actions" aria-label="Intro controls">
+          <button class="ghost-button image-button" id="backButton" type="button">Return to Gate</button>
+          <button class="enter-button image-button" id="orientationButton" type="button">Begin Orientation</button>
         </div>
 
-        <div class="button-row">
-          <button class="ghost-button" id="backButton" type="button">Return to Gate</button>
-          <button class="enter-button small" id="orientationButton" type="button">Begin Orientation</button>
+        <button class="audio-toggle" id="audioToggle" type="button" aria-pressed="false">
+          Narration: On
+        </button>
+
+        <div class="sr-only">
+          <p>A formal welcome from Headmistress Belladonna Nightshade.</p>
+          <p>Welcome to The Nightshade Academy — an elite finishing and boarding school for monsters.</p>
+          <p>Here, we teach elegance, discipline, menace, and distinction.</p>
+          <p>Our students do not merely frighten. They do so with style.</p>
+          <p>If you are prepared to learn, proceed inside. If not, the gate is behind you.</p>
         </div>
       </div>
     </section>
@@ -108,6 +105,7 @@
     </section>
   </main>
 
+  <audio id="introNarration" src="assets/audio/opening-greeting.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
