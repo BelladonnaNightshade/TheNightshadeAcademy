@@ -865,3 +865,30 @@ h2 {
     width: 100%;
   }
 }
+
+
+/* Adjustment: make the Orientation Hall background about 30% less dark.
+   This keeps the text readable but lets Belladonna and the staircase art show through more clearly. */
+.hub-screen {
+  background:
+    linear-gradient(90deg, rgba(3, 2, 5, 0.59) 0%, rgba(5, 3, 8, 0.34) 34%, rgba(4, 3, 7, 0.31) 63%, rgba(3, 2, 5, 0.59) 100%),
+    linear-gradient(180deg, rgba(3, 2, 5, 0.20) 0%, rgba(3, 2, 5, 0.10) 36%, rgba(3, 2, 5, 0.52) 100%),
+    url("assets/images/orientation-hall-bg.webp") center center / cover no-repeat;
+}
+
+.hub-screen::before {
+  background:
+    radial-gradient(circle at 36% 18%, rgba(154, 83, 210, 0.11), transparent 26rem),
+    radial-gradient(circle at 82% 82%, rgba(151, 16, 61, 0.08), transparent 28rem),
+    linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.34));
+}
+
+.hub-card {
+  background:
+    linear-gradient(180deg, rgba(40, 17, 56, 0.48), rgba(9, 6, 15, 0.40));
+}
+
+.hub-screen .ghost-button,
+.hub-panel .eyebrow {
+  background: rgba(8, 5, 13, 0.44);
+}
