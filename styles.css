@@ -477,3 +477,22 @@ h2 {
     letter-spacing: 0.05em;
   }
 }
+
+/* Fix: the Headmistress welcome art already contains the Return/Begin buttons.
+   Keep the real HTML buttons clickable, but make them invisible so the buttons do not appear twice. */
+.intro-actions .image-button {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  opacity: 1;
+}
+
+.intro-actions .image-button:hover,
+.intro-actions .image-button:focus-visible {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  color: transparent !important;
+  box-shadow: none !important;
+}
