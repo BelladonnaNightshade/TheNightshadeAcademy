@@ -496,3 +496,73 @@ h2 {
   color: transparent !important;
   box-shadow: none !important;
 }
+
+/* Fix 2: make the invisible click targets line up with the buttons printed in the Headmistress image.
+   The previous invisible buttons sat too low, creating a clickable ghost button below the artwork. */
+.intro-actions {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.intro-actions .image-button {
+  position: absolute;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: none !important;
+}
+
+.intro-actions .image-button:hover,
+.intro-actions .image-button:focus,
+.intro-actions .image-button:focus-visible {
+  background: transparent !important;
+  border: 0 !important;
+  outline: none !important;
+  color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#backButton {
+  left: 13.4%;
+  bottom: 12.3%;
+  width: 12.8%;
+  height: 5.7%;
+}
+
+#orientationButton {
+  left: 26.3%;
+  bottom: 12.3%;
+  width: 18.1%;
+  height: 5.7%;
+}
+
+@media (max-width: 760px) {
+  .intro-actions {
+    inset: 0;
+  }
+
+  #backButton {
+    left: 13.4%;
+    bottom: 12.3%;
+    width: 12.8%;
+    height: 5.7%;
+  }
+
+  #orientationButton {
+    left: 26.3%;
+    bottom: 12.3%;
+    width: 18.1%;
+    height: 5.7%;
+  }
+}
