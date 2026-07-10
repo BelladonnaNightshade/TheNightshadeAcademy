@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Nightshade Academy</title>
+  <meta name="description" content="The Nightshade Academy — An Elite Finishing and Boarding School for Monsters." />
+  <link rel="preload" as="image" href="assets/images/nightshade-academy-sign.webp" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section class="landing-screen active" id="landing" aria-label="The Nightshade Academy landing page">
+      <div class="mist mist-one"></div>
+      <div class="mist mist-two"></div>
+      <div class="moon-glow"></div>
+
+      <div class="sign-wrap">
+        <img
+          src="assets/images/nightshade-academy-sign.webp"
+          alt="The Nightshade Academy — An Elite Finishing and Boarding School for Monsters"
+          class="academy-sign"
+        />
+      </div>
+
+      <button class="enter-button" id="enterButton" type="button">
+        Enter the Academy
+      </button>
+
+      <p class="landing-note">Applications are reviewed after sunset.</p>
+    </section>
+
+    <section class="intro-screen" id="intro" aria-label="Headmistress Belladonna introduction">
+      <div class="intro-card">
+        <p class="eyebrow">A formal welcome from</p>
+        <h1>Headmistress Belladonna Nightshade</h1>
+        <p class="subtitle">Vampire Queen · Founder · Keeper of Standards</p>
+
+        <div class="speech-box" id="speechBox">
+          <p>
+            Welcome to <strong>The Nightshade Academy</strong> — an elite finishing and boarding school for monsters.
+          </p>
+          <p>
+            Here, we teach elegance, discipline, menace, and distinction.
+          </p>
+          <p>
+            Our students do not merely frighten. They do so with style.
+          </p>
+          <p>
+            If you are prepared to learn, proceed inside.
+          </p>
+          <p>
+            If not, the gate is behind you.
+          </p>
+        </div>
+
+        <div class="button-row">
+          <button class="ghost-button" id="backButton" type="button">Return to Gate</button>
+          <button class="enter-button small" id="orientationButton" type="button">Begin Orientation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hub-screen" id="hub" aria-label="The Nightshade Academy orientation hub">
+      <div class="hub-panel">
+        <p class="eyebrow">Orientation Hall</p>
+        <h2>The Academy Awaits</h2>
+        <p>
+          Choose where the tour begins. These doors are ready for future rooms, faculty pages,
+          student profiles, lessons, and narrated scenes.
+        </p>
+
+        <nav class="hub-grid" aria-label="Academy sections">
+          <a href="#" class="hub-card">
+            <span>01</span>
+            <strong>Headmistress</strong>
+            <em>Belladonna’s official office</em>
+          </a>
+          <a href="#" class="hub-card">
+            <span>02</span>
+            <strong>Faculty</strong>
+            <em>Professors of refined monstrosity</em>
+          </a>
+          <a href="#" class="hub-card">
+            <span>03</span>
+            <strong>Students</strong>
+            <em>Young horrors with potential</em>
+          </a>
+          <a href="#" class="hub-card">
+            <span>04</span>
+            <strong>Courses</strong>
+            <em>Elegance, terror, posture</em>
+          </a>
+          <a href="#" class="hub-card">
+            <span>05</span>
+            <strong>Campus</strong>
+            <em>Rooms, wings, and forbidden doors</em>
+          </a>
+          <a href="#" class="hub-card">
+            <span>06</span>
+            <strong>Admissions</strong>
+            <em>Apply if you must</em>
+          </a>
+        </nav>
+
+        <button class="ghost-button" id="hubBackButton" type="button">Return to Headmistress</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
