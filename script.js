@@ -1,11 +1,14 @@
 const landing = document.getElementById("landing");
 const intro = document.getElementById("intro");
 const hub = document.getElementById("hub");
+const faculty = document.getElementById("faculty");
 
 const enterButton = document.getElementById("enterButton");
 const backButton = document.getElementById("backButton");
 const orientationButton = document.getElementById("orientationButton");
 const hubBackButton = document.getElementById("hubBackButton");
+const facultyCard = document.getElementById("facultyCard");
+const facultyBackButton = document.getElementById("facultyBackButton");
 const introNarration = document.getElementById("introNarration");
 const audioToggle = document.getElementById("audioToggle");
 const academyAnthem = document.getElementById("academyAnthem");
@@ -17,7 +20,7 @@ let musicMuted = false;
 const mediumMusicVolume = 0.45;
 
 function showScreen(screen) {
-  [landing, intro, hub].forEach((section) => {
+  [landing, intro, hub, faculty].forEach((section) => {
     section.classList.remove("active");
   });
 
@@ -108,6 +111,17 @@ enterButton.addEventListener("click", () => showScreen(intro));
 backButton.addEventListener("click", () => showScreen(landing));
 orientationButton.addEventListener("click", () => showScreen(hub));
 hubBackButton.addEventListener("click", () => showScreen(intro));
+
+if (facultyCard) {
+  facultyCard.addEventListener("click", (event) => {
+    event.preventDefault();
+    showScreen(faculty);
+  });
+}
+
+if (facultyBackButton) {
+  facultyBackButton.addEventListener("click", () => showScreen(hub));
+}
 
 if (audioToggle) {
   audioToggle.addEventListener("click", () => {
