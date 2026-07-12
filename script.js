@@ -9,6 +9,8 @@ const orientationButton = document.getElementById("orientationButton");
 const hubBackButton = document.getElementById("hubBackButton");
 const facultyCard = document.getElementById("facultyCard");
 const facultyBackButton = document.getElementById("facultyBackButton");
+const facultyButtons = document.querySelectorAll("[data-faculty-button]");
+const facultyEntries = document.querySelectorAll("[data-faculty-entry]");
 const introNarration = document.getElementById("introNarration");
 const audioToggle = document.getElementById("audioToggle");
 const academyAnthem = document.getElementById("academyAnthem");
@@ -18,6 +20,21 @@ const musicCrankButton = document.getElementById("musicCrankButton");
 let narrationEnabled = true;
 let musicMuted = false;
 const mediumMusicVolume = 0.45;
+
+function switchFaculty(facultyId) {
+  if (!facultyId) return;
+
+  facultyButtons.forEach((button) => {
+    const isActive = button.dataset.facultyButton === facultyId;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-selected", String(isActive));
+  });
+
+  facultyEntries.forEach((entry) => {
+    const isActive = entry.dataset.facultyEntry === facultyId;
+    entry.classList.toggle("active", isActive);
+  });
+}
 
 function showScreen(screen) {
   [landing, intro, hub, faculty].forEach((section) => {
@@ -123,6 +140,10 @@ if (facultyBackButton) {
   facultyBackButton.addEventListener("click", () => showScreen(hub));
 }
 
+facultyButtons.forEach((button) => {
+  button.addEventListener("click", () => switchFaculty(button.dataset.facultyButton));
+});
+
 if (audioToggle) {
   audioToggle.addEventListener("click", () => {
     narrationEnabled = !narrationEnabled;
@@ -172,5 +193,6 @@ if (musicCrankButton) {
   });
 }
 
+switchFaculty("elaine");
 updateAudioButton();
 updateMusicButtons();

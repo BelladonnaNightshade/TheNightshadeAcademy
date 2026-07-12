@@ -116,66 +116,223 @@
 
     <section class="faculty-screen" id="faculty" aria-label="The esteemed faculty of The Nightshade Academy">
       <div class="faculty-shell">
-        <header class="faculty-header">
+        <header class="faculty-header faculty-overview">
           <p class="eyebrow">The Esteemed Faculty</p>
-          <h2>Professor Elaine Veinmore</h2>
-          <p class="faculty-department">Department of Etiquette · Young Vampiress</p>
+          <h2>The Faculty of The Nightshade Academy</h2>
+          <p class="faculty-intro">
+            Select a professor to learn more about the scholars shaping Nightshade Academy’s most refined horrors.
+          </p>
+
+          <div class="faculty-roster" role="tablist" aria-label="Faculty roster">
+            <button class="faculty-chip is-active" type="button" data-faculty-button="elaine" aria-selected="true">
+              Professor Elaine Veinmore
+              <span>Etiquette</span>
+            </button>
+            <button class="faculty-chip" type="button" data-faculty-button="mortimer" aria-selected="false">
+              Professor Mortimer Blackbriar
+              <span>History and Ancient Magic</span>
+            </button>
+            <button class="faculty-chip" type="button" data-faculty-button="paisley" aria-selected="false">
+              Professor Paisley Thistledoom
+              <span>Toxic Botany and Evil Plants</span>
+            </button>
+          </div>
         </header>
 
-        <article class="faculty-profile">
-          <figure class="faculty-portrait">
-            <img
-              src="assets/images/professor-elaine-veinmore.webp"
-              alt="Professor Elaine Veinmore teaching etiquette in a gothic Nightshade Academy classroom"
-            />
-          </figure>
+        <div class="faculty-entry active" data-faculty-entry="elaine">
+          <header class="faculty-entry-header">
+            <p class="eyebrow">Department of Etiquette</p>
+            <h2>Professor Elaine Veinmore</h2>
+            <p class="faculty-department">Young Vampiress</p>
+          </header>
 
-          <div class="faculty-copy">
-            <p class="faculty-lede">
-              Cheerful, youthful, and endlessly enthusiastic, Professor Elaine Veinmore teaches
-              young monsters the finer points of poise, grace, restraint, and refined menace.
-            </p>
+          <article class="faculty-profile">
+            <figure class="faculty-portrait">
+              <img
+                src="assets/images/professor-elaine-veinmore.webp"
+                alt="Professor Elaine Veinmore teaching etiquette in a gothic Nightshade Academy classroom"
+              />
+            </figure>
 
-            <p>
-              Elaine absolutely adores Headmistress Belladonna—perhaps a little too much—and rarely
-              misses an opportunity to quote her. Despite teaching flawless composure, she is famously
-              clumsy. Teacups spill, demonstrations unravel, and furniture has learned to fear her.
-              She always recovers with a smile and insists that true elegance lies in how one survives
-              embarrassment.
-            </p>
+            <div class="faculty-copy">
+              <p class="faculty-lede">
+                Cheerful, youthful, and endlessly enthusiastic, Professor Elaine Veinmore teaches
+                young monsters the finer points of poise, grace, restraint, and refined menace.
+              </p>
 
-            <div class="faculty-facts" aria-label="Professor Veinmore profile highlights">
-              <div>
-                <span>Teaches</span>
-                <strong>Poise, formal conduct, social menace, ceremonial etiquette</strong>
+              <p>
+                Elaine absolutely adores Headmistress Belladonna—perhaps a little too much—and rarely
+                misses an opportunity to quote her. Despite teaching flawless composure, she is famously
+                clumsy. Teacups spill, demonstrations unravel, and furniture has learned to fear her.
+                She always recovers with a smile and insists that true elegance lies in how one survives
+                embarrassment.
+              </p>
+
+              <div class="faculty-facts" aria-label="Professor Veinmore profile highlights">
+                <div>
+                  <span>Teaches</span>
+                  <strong>Poise, formal conduct, social menace, ceremonial etiquette</strong>
+                </div>
+                <div>
+                  <span>Known for</span>
+                  <strong>Encouragement, Belladonna devotion, accidental catastrophes</strong>
+                </div>
+                <div>
+                  <span>Classroom reputation</span>
+                  <strong>Warm, lively, and one overturned tea service from disaster</strong>
+                </div>
               </div>
-              <div>
-                <span>Known for</span>
-                <strong>Encouragement, Belladonna devotion, accidental catastrophes</strong>
-              </div>
-              <div>
-                <span>Classroom reputation</span>
-                <strong>Warm, lively, and one overturned tea service from disaster</strong>
-              </div>
+
+              <blockquote>
+                “Elegance is not never falling. It is rising before anyone has time to laugh.”
+              </blockquote>
             </div>
+          </article>
 
-            <blockquote>
-              “Elegance is not never falling. It is rising before anyone has time to laugh.”
-            </blockquote>
-          </div>
-        </article>
+          <aside class="faculty-moment" aria-label="Professor Veinmore in practice">
+            <img
+              src="assets/images/professor-elaine-veinmore-tea.webp"
+              alt="Professor Elaine Veinmore accidentally spilling a tea service while trying to carry it elegantly"
+            />
+            <div>
+              <p class="eyebrow">Professor Veinmore in Practice</p>
+              <h3>Composure is sometimes a recovery exercise.</h3>
+              <p>Her lessons are impeccable. Her demonstrations are memorable for other reasons.</p>
+            </div>
+          </aside>
+        </div>
 
-        <aside class="faculty-moment" aria-label="Professor Veinmore in practice">
-          <img
-            src="assets/images/professor-elaine-veinmore-tea.webp"
-            alt="Professor Elaine Veinmore accidentally spilling a tea service while trying to carry it elegantly"
-          />
-          <div>
-            <p class="eyebrow">Professor Veinmore in Practice</p>
-            <h3>Composure is sometimes a recovery exercise.</h3>
-            <p>Her lessons are impeccable. Her demonstrations are memorable for other reasons.</p>
-          </div>
-        </aside>
+        <div class="faculty-entry" data-faculty-entry="mortimer">
+          <header class="faculty-entry-header">
+            <p class="eyebrow">Department of History and Ancient Magic</p>
+            <h2>Professor Mortimer Blackbriar</h2>
+            <p class="faculty-department">Ancient Lich</p>
+          </header>
+
+          <article class="faculty-profile">
+            <figure class="faculty-portrait">
+              <img
+                src="assets/images/professor-mortimer-blackbriar.webp"
+                alt="Professor Mortimer Blackbriar, an ancient lich, standing in a candlelit library with an ornate arcane staff"
+              />
+            </figure>
+
+            <div class="faculty-copy">
+              <p class="faculty-lede">
+                An ancient lich of immense age and unimpeachable scholarship, Professor Mortimer
+                Blackbriar presides over the study of history, relics, and the oldest surviving forms of magic.
+              </p>
+
+              <p>
+                Mortimer insists he has long since “transcended fleshly distractions,” and carries himself
+                with grave dignity befitting a scholar who remembers empires most people only read about.
+                Belladonna considers Nightshade Academy fortunate to have such an esteemed authority.
+                His colleagues agree on his brilliance, though they privately nurse a less dignified title for him:
+                <em>“The Bone Daddy.”</em> Never to his face.
+              </p>
+
+              <div class="faculty-facts" aria-label="Professor Blackbriar profile highlights">
+                <div>
+                  <span>Teaches</span>
+                  <strong>Ancient civilizations, forbidden history, relic interpretation, pre-mortal sorcery</strong>
+                </div>
+                <div>
+                  <span>Known for</span>
+                  <strong>Monumental knowledge, grave self-importance, and a baffling indifference to romance</strong>
+                </div>
+                <div>
+                  <span>Classroom reputation</span>
+                  <strong>Exacting, mesmerizing, and old enough to correct the dead on their own history</strong>
+                </div>
+              </div>
+
+              <blockquote>
+                “History does not repeat itself. It merely waits for the living to make the same mistakes.”
+              </blockquote>
+            </div>
+          </article>
+
+          <aside class="faculty-moment" aria-label="Professor Blackbriar among the faculty">
+            <img
+              src="assets/images/professor-mortimer-blackbriar-detail.webp"
+              alt="A close-up portrait of Professor Mortimer Blackbriar showing his skeletal features and glowing blue eyes"
+            />
+            <div>
+              <p class="eyebrow">Among the Faculty</p>
+              <h3>Respect, awe, and one forbidden nickname.</h3>
+              <p>
+                Mortimer assumes the hush that follows him is reverence. In truth, the staff are usually
+                trying not to laugh at a nickname they treasure far too much to risk saying aloud.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="faculty-entry" data-faculty-entry="paisley">
+          <header class="faculty-entry-header">
+            <p class="eyebrow">Department of Toxic Botany and Evil Plants</p>
+            <h2>Professor Paisley Thistledoom</h2>
+            <p class="faculty-department">Poisonwood Dryad</p>
+          </header>
+
+          <article class="faculty-profile">
+            <figure class="faculty-portrait">
+              <img
+                src="assets/images/professor-paisley-thistledoom.webp"
+                alt="Professor Paisley Thistledoom tending a carnivorous plant in a moonlit gothic greenhouse classroom"
+              />
+            </figure>
+
+            <div class="faculty-copy">
+              <p class="faculty-lede">
+                A Poisonwood Dryad of rare refinement, Professor Paisley Thistledoom governs the Department
+                of Toxic Botany and Evil Plants with perfect composure and deeply questionable maternal instincts.
+              </p>
+
+              <p>
+                In her cultivated humanoid form she is poised, cheerful, and almost entirely absorbed by plant life.
+                She is frequently hilarious, though rarely on purpose. Her affection for deadly flora is sincere,
+                maternal, and more than a little disturbing; she speaks to carnivorous plants as though they were
+                gifted but temperamental children. When provoked, she may unfurl into a far older shape of roots,
+                thorns, venomous blossoms, and predatory vines.
+              </p>
+
+              <div class="faculty-facts" aria-label="Professor Thistledoom profile highlights">
+                <div>
+                  <span>Teaches</span>
+                  <strong>Poisonous flora, carnivorous cultivation, venomous pollens, and botanical containment</strong>
+                </div>
+                <div>
+                  <span>Known for</span>
+                  <strong>Forgetting students’ names, remembering every plant, and encouraging dangerous growth with alarming tenderness</strong>
+                </div>
+                <div>
+                  <span>Classroom reputation</span>
+                  <strong>Warm, fascinating, and potentially fatal—especially if something appears to be asleep</strong>
+                </div>
+              </div>
+
+              <blockquote>
+                “Oh, she isn’t trying to eat you. She is only testing whether you are nutritious.”
+              </blockquote>
+            </div>
+          </article>
+
+          <aside class="faculty-moment" aria-label="Professor Thistledoom true form">
+            <img
+              src="assets/images/professor-paisley-thistledoom-true-form.webp"
+              alt="Professor Paisley Thistledoom in her dreadful dryad form, a monstrous mass of roots, thorns, blossoms, and carnivorous vines"
+            />
+            <div>
+              <p class="eyebrow">When Provoked</p>
+              <h3>The dreadful shape beneath the botanist.</h3>
+              <p>
+                Most students adore Professor Thistledoom right up until the greenhouse reveals that she is,
+                in fact, the most dangerous plant in it.
+              </p>
+            </div>
+          </aside>
+        </div>
 
         <button class="ghost-button faculty-back" id="facultyBackButton" type="button">Return to Orientation Hall</button>
       </div>
