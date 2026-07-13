@@ -1736,3 +1736,199 @@ h2 {
     width: 100%;
   }
 }
+
+
+/* Headmistress Belladonna's official office */
+.headmistress-office-screen {
+  padding: clamp(1rem, 3vw, 3rem);
+  background:
+    linear-gradient(rgba(4, 3, 8, 0.72), rgba(4, 3, 8, 0.94)),
+    radial-gradient(circle at 28% 18%, rgba(111, 44, 142, 0.22), transparent 32rem),
+    url("assets/images/orientation-hall-bg.webp") center / cover fixed no-repeat;
+}
+
+.headmistress-office-shell {
+  width: min(96vw, 1380px);
+  margin: auto;
+}
+
+.headmistress-office-header {
+  max-width: 980px;
+  margin: 0 auto clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.headmistress-office-header h2 {
+  font-size: clamp(2.35rem, 6vw, 5rem);
+}
+
+.headmistress-office-header > p:not(.eyebrow) {
+  max-width: 840px;
+  margin: 0.85rem auto 0;
+  color: rgba(235, 226, 241, 0.8);
+  line-height: 1.7;
+}
+
+.headmistress-office-hero {
+  margin: 0;
+  border: 1px solid rgba(222, 205, 240, 0.25);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.62);
+}
+
+.headmistress-office-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.headmistress-office-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: clamp(1.2rem, 3vw, 2rem);
+}
+
+.headmistress-office-copy,
+.headmistress-office-sidebar > section {
+  border: 1px solid rgba(220, 202, 240, 0.2);
+  border-radius: 1.1rem;
+  background: linear-gradient(145deg, rgba(13, 9, 19, 0.92), rgba(30, 13, 38, 0.82));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035);
+}
+
+.headmistress-office-copy {
+  padding: clamp(1.1rem, 2.5vw, 2rem);
+  color: rgba(241, 233, 244, 0.88);
+  line-height: 1.75;
+}
+
+.headmistress-office-lede {
+  margin-top: 0;
+  color: #fff;
+  font-size: clamp(1.08rem, 1.7vw, 1.35rem);
+}
+
+.headmistress-office-facts {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1.4rem 0;
+}
+
+.headmistress-office-facts div {
+  display: grid;
+  gap: 0.22rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid #9b103d;
+  background: rgba(255,255,255,0.035);
+}
+
+.headmistress-office-facts span {
+  color: #d8a9bc;
+  font-family: Cinzel, Georgia, serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.headmistress-office-facts strong {
+  color: rgba(250, 244, 251, 0.95);
+  font-weight: 400;
+}
+
+.headmistress-office-copy blockquote {
+  margin: 1.4rem 0 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(219, 183, 201, 0.23);
+  border-radius: 0.85rem;
+  color: #f3d9e4;
+  background: rgba(137, 28, 69, 0.1);
+  font-style: italic;
+}
+
+.headmistress-office-sidebar {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.headmistress-office-sidebar > section {
+  padding: 1.2rem;
+}
+
+.headmistress-office-sidebar h3 {
+  margin: 0.25rem 0 0.7rem;
+  color: #fff;
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.headmistress-office-sidebar p,
+.headmistress-office-sidebar li {
+  color: rgba(236, 228, 241, 0.82);
+  line-height: 1.65;
+}
+
+.decree-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.decree-card li + li {
+  margin-top: 0.75rem;
+}
+
+.headmistress-office-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: clamp(1.2rem, 3vw, 2rem);
+}
+
+.office-link-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid rgba(220, 202, 240, 0.22);
+  border-radius: 1rem;
+  color: #fff;
+  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+  text-align: left;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.office-link-card:hover,
+.office-link-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(213, 174, 255, 0.72);
+  background: linear-gradient(145deg, rgba(139, 57, 186, 0.18), rgba(255,255,255,0.035));
+}
+
+.office-link-card span {
+  font-family: Cinzel, Georgia, serif;
+  font-size: 1.08rem;
+}
+
+.office-link-card small {
+  color: rgba(232, 223, 241, 0.7);
+  line-height: 1.45;
+}
+
+.headmistress-office-back {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: rgba(8, 5, 13, 0.72);
+}
+
+@media (max-width: 820px) {
+  .headmistress-office-screen {
+    background-attachment: scroll;
+  }
+
+  .headmistress-office-profile,
+  .headmistress-office-links {
+    grid-template-columns: 1fr;
+  }
+}

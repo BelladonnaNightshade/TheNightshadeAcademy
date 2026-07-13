@@ -4,11 +4,15 @@ const hub = document.getElementById("hub");
 const faculty = document.getElementById("faculty");
 const students = document.getElementById("students");
 const admissions = document.getElementById("admissions");
+const headmistressOffice = document.getElementById("headmistressOffice");
 
 const enterButton = document.getElementById("enterButton");
 const backButton = document.getElementById("backButton");
 const orientationButton = document.getElementById("orientationButton");
 const hubBackButton = document.getElementById("hubBackButton");
+const headmistressCard = document.getElementById("headmistressCard");
+const headmistressBackButton = document.getElementById("headmistressBackButton");
+const officeLinkButtons = document.querySelectorAll("[data-office-target]");
 const facultyCard = document.getElementById("facultyCard");
 const facultyBackButton = document.getElementById("facultyBackButton");
 const studentsCard = document.getElementById("studentsCard");
@@ -65,7 +69,7 @@ function switchStudent(studentId) {
 }
 
 function showScreen(screen) {
-  [landing, intro, hub, faculty, students, admissions].forEach((section) => {
+  [landing, intro, hub, headmistressOffice, faculty, students, admissions].forEach((section) => {
     section.classList.remove("active");
   });
 
@@ -160,6 +164,25 @@ enterButton.addEventListener("click", () => showScreen(intro));
 backButton.addEventListener("click", () => showScreen(landing));
 orientationButton.addEventListener("click", () => showScreen(hub));
 hubBackButton.addEventListener("click", () => showScreen(intro));
+
+if (headmistressCard) {
+  headmistressCard.addEventListener("click", (event) => {
+    event.preventDefault();
+    showScreen(headmistressOffice);
+  });
+}
+
+if (headmistressBackButton) {
+  headmistressBackButton.addEventListener("click", () => showScreen(hub));
+}
+
+officeLinkButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const target = button.dataset.officeTarget;
+    const screenMap = { admissions, faculty, students };
+    if (screenMap[target]) showScreen(screenMap[target]);
+  });
+});
 
 if (facultyCard) {
   facultyCard.addEventListener("click", (event) => {
