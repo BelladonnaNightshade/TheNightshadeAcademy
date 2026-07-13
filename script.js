@@ -148,6 +148,10 @@ function updateAudioButton() {
   audioToggle.classList.toggle("is-muted", !narrationEnabled);
 }
 
+if (introNarration) {
+  introNarration.volume = 0.5;
+}
+
 if (academyAnthem) {
   academyAnthem.volume = mediumMusicVolume;
 }
