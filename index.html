@@ -103,7 +103,7 @@
             <strong>Campus</strong>
             <em>Rooms, wings, and forbidden doors</em>
           </a>
-          <a href="#" class="hub-card">
+          <a href="#admissions" class="hub-card" id="admissionsCard">
             <span>06</span>
             <strong>Admissions</strong>
             <em>Apply if you must</em>
@@ -627,6 +627,146 @@
         <button class="ghost-button students-back" id="studentsBackButton" type="button">Return to Orientation Hall</button>
       </div>
     </section>
+
+
+    <section class="admissions-screen" id="admissions" aria-label="Nightshade Academy admissions assessment">
+      <div class="admissions-shell">
+        <header class="admissions-header">
+          <p class="eyebrow">Office of Admissions and Threat Evaluation</p>
+          <h2>Determine Your Suitability</h2>
+          <p>
+            Complete both examinations. The Academy will evaluate what kind of monster you are,
+            how dangerous you may become, and whether further refinement is warranted.
+          </p>
+          <p class="admissions-warning">Answer honestly. The Department of Omens and Prophecy will know if you do not.</p>
+        </header>
+
+        <form class="admissions-form" id="admissionsForm">
+          <label class="applicant-name">
+            <span>Applicant name</span>
+            <input id="applicantName" name="applicantName" type="text" maxlength="60" placeholder="Name, title, or known alias" />
+          </label>
+
+          <section class="assessment-panel" aria-labelledby="natureTitle">
+            <div class="assessment-heading">
+              <p class="eyebrow">Examination I</p>
+              <h3 id="natureTitle">Monstrous Nature</h3>
+              <p>What form does your monstrosity take when no one is looking?</p>
+            </div>
+
+            <fieldset class="quiz-question">
+              <legend>1. When threatened, your first instinct is to…</legend>
+              <label><input type="radio" name="nature1" value="0" required /> apologize and hope the problem leaves.</label>
+              <label><input type="radio" name="nature1" value="1" /> hiss, growl, or make the lights flicker.</label>
+              <label><input type="radio" name="nature1" value="2" /> transform into something considerably less polite.</label>
+              <label><input type="radio" name="nature1" value="3" /> become the reason future generations fear that location.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>2. Which place feels most like home?</legend>
+              <label><input type="radio" name="nature2" value="0" required /> A comfortable room with reliable heating.</label>
+              <label><input type="radio" name="nature2" value="1" /> A moonlit forest, attic, crypt, or abandoned wing.</label>
+              <label><input type="radio" name="nature2" value="2" /> A laboratory, haunted tower, cursed garden, or infernal court.</label>
+              <label><input type="radio" name="nature2" value="3" /> Wherever the screaming recently stopped.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>3. How stable is your physical form?</legend>
+              <label><input type="radio" name="nature3" value="0" required /> Entirely stable and disappointingly ordinary.</label>
+              <label><input type="radio" name="nature3" value="1" /> Mostly stable, except under a full moon or emotional stress.</label>
+              <label><input type="radio" name="nature3" value="2" /> Replaceable parts, alternate forms, or occasional spectral leakage.</label>
+              <label><input type="radio" name="nature3" value="3" /> “Physical form” is an unnecessarily restrictive phrase.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>4. What do humans notice first?</legend>
+              <label><input type="radio" name="nature4" value="0" required /> Excellent manners.</label>
+              <label><input type="radio" name="nature4" value="1" /> Eyes, teeth, claws, stitches, horns, or suspicious shadows.</label>
+              <label><input type="radio" name="nature4" value="2" /> The sudden change in temperature and their urge to flee.</label>
+              <label><input type="radio" name="nature4" value="3" /> They rarely remain observant long enough to say.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>5. Which statement best describes your origin?</legend>
+              <label><input type="radio" name="nature5" value="0" required /> Entirely respectable and legally documented.</label>
+              <label><input type="radio" name="nature5" value="1" /> Born into an unusual bloodline or cursed under regrettable circumstances.</label>
+              <label><input type="radio" name="nature5" value="2" /> Summoned, assembled, resurrected, transformed, or grown in a vessel.</label>
+              <label><input type="radio" name="nature5" value="3" /> The surviving witnesses disagree.</label>
+            </fieldset>
+          </section>
+
+          <section class="assessment-panel malevolence-panel" aria-labelledby="malevolenceTitle">
+            <div class="assessment-heading">
+              <p class="eyebrow">Examination II</p>
+              <h3 id="malevolenceTitle">Malevolent Potential</h3>
+              <p>Not every monster is evil. More importantly, not every evil monster is competent.</p>
+            </div>
+
+            <fieldset class="quiz-question">
+              <legend>1. A rival humiliates you at dinner. You…</legend>
+              <label><input type="radio" name="evil1" value="0" required /> forgive them and continue eating.</label>
+              <label><input type="radio" name="evil1" value="1" /> insult them more effectively.</label>
+              <label><input type="radio" name="evil1" value="2" /> arrange an elegant, proportionate revenge.</label>
+              <label><input type="radio" name="evil1" value="3" /> curse their bloodline and finish dessert.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>2. When offered forbidden power, you ask…</legend>
+              <label><input type="radio" name="evil2" value="0" required /> “Is this safe?”</label>
+              <label><input type="radio" name="evil2" value="1" /> “Is this allowed?”</label>
+              <label><input type="radio" name="evil2" value="2" /> “What is the price?”</label>
+              <label><input type="radio" name="evil2" value="3" /> “Can it be made stronger?”</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>3. Mercy is…</legend>
+              <label><input type="radio" name="evil3" value="0" required /> a virtue.</label>
+              <label><input type="radio" name="evil3" value="1" /> occasionally useful.</label>
+              <label><input type="radio" name="evil3" value="2" /> an excellent way to create indebted survivors.</label>
+              <label><input type="radio" name="evil3" value="3" /> a rumor spread by prey.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>4. You discover a sealed ancient door. You…</legend>
+              <label><input type="radio" name="evil4" value="0" required /> report it to a responsible adult.</label>
+              <label><input type="radio" name="evil4" value="1" /> listen at it and take notes.</label>
+              <label><input type="radio" name="evil4" value="2" /> open it carefully and bring a less valued companion.</label>
+              <label><input type="radio" name="evil4" value="3" /> weaponize whatever is behind it.</label>
+            </fieldset>
+
+            <fieldset class="quiz-question">
+              <legend>5. Your preferred legacy is…</legend>
+              <label><input type="radio" name="evil5" value="0" required /> fond memories.</label>
+              <label><input type="radio" name="evil5" value="1" /> a scandalous reputation.</label>
+              <label><input type="radio" name="evil5" value="2" /> a century of whispered warnings.</label>
+              <label><input type="radio" name="evil5" value="3" /> a new historical era named after the catastrophe.</label>
+            </fieldset>
+          </section>
+
+          <div class="admissions-actions">
+            <button class="enter-button" type="submit">Submit to Admissions</button>
+            <button class="ghost-button" id="resetAdmissions" type="reset">Destroy This Application</button>
+          </div>
+        </form>
+
+        <section class="admissions-result" id="admissionsResult" aria-live="polite" hidden>
+          <div class="result-seal" aria-hidden="true">N</div>
+          <p class="eyebrow" id="resultStatus">Admissions Decision</p>
+          <h3 id="resultHeading"></h3>
+          <p class="result-address" id="resultAddress"></p>
+          <p id="resultLetter"></p>
+          <div class="result-scores">
+            <div><span>Monstrous Nature</span><strong id="natureResult"></strong></div>
+            <div><span>Malevolent Potential</span><strong id="malevolenceResult"></strong></div>
+          </div>
+          <p class="result-signature">By order of the Office of Admissions<br /><strong>The Nightshade Academy</strong></p>
+          <button class="ghost-button" id="retakeAdmissions" type="button">Retake the Examinations</button>
+        </section>
+
+        <button class="ghost-button admissions-back" id="admissionsBackButton" type="button">Return to Orientation Hall</button>
+      </div>
+    </section>
+
   </main>
 
   <audio id="introNarration" src="assets/audio/opening-greeting.mp3" preload="auto"></audio>

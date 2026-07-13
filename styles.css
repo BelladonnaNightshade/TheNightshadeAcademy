@@ -1480,3 +1480,259 @@ h2 {
     object-position: top center;
   }
 }
+
+/* Admissions assessments */
+.admissions-screen {
+  padding: clamp(1rem, 3vw, 3rem);
+  background:
+    linear-gradient(rgba(4, 3, 8, 0.8), rgba(4, 3, 8, 0.94)),
+    radial-gradient(circle at 18% 10%, rgba(102, 31, 130, 0.24), transparent 30rem),
+    radial-gradient(circle at 82% 86%, rgba(145, 18, 59, 0.18), transparent 32rem),
+    url("assets/images/orientation-hall-bg.webp") center / cover fixed no-repeat;
+}
+
+.admissions-shell {
+  width: min(96vw, 1180px);
+  margin: auto;
+}
+
+.admissions-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.admissions-header h2 {
+  font-size: clamp(2.2rem, 6vw, 4.8rem);
+}
+
+.admissions-header > p:not(.eyebrow) {
+  max-width: 820px;
+  margin: 0.8rem auto 0;
+  color: rgba(235, 226, 241, 0.82);
+  line-height: 1.7;
+}
+
+.admissions-warning {
+  color: #d8b7df !important;
+  font-style: italic;
+}
+
+.admissions-form,
+.admissions-result {
+  padding: clamp(1rem, 3vw, 2.2rem);
+  border: 1px solid rgba(220, 202, 240, 0.25);
+  border-radius: 1.3rem;
+  background: linear-gradient(145deg, rgba(13, 9, 19, 0.94), rgba(30, 13, 38, 0.88));
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.58), inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.applicant-name {
+  display: grid;
+  gap: 0.45rem;
+  max-width: 620px;
+  margin: 0 auto 1.4rem;
+}
+
+.applicant-name span {
+  color: #d5b8df;
+  font-family: Cinzel, Georgia, serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.applicant-name input {
+  width: 100%;
+  border: 1px solid rgba(226, 208, 238, 0.3);
+  border-radius: 0.8rem;
+  padding: 0.9rem 1rem;
+  color: #fff;
+  background: rgba(255,255,255,0.045);
+  font: inherit;
+}
+
+.assessment-panel {
+  margin-top: 1.1rem;
+  padding: clamp(1rem, 2.5vw, 1.7rem);
+  border: 1px solid rgba(193, 177, 220, 0.2);
+  border-radius: 1.05rem;
+  background: rgba(255,255,255,0.025);
+}
+
+.malevolence-panel {
+  border-color: rgba(180, 71, 103, 0.25);
+  background: linear-gradient(145deg, rgba(92, 19, 48, 0.08), rgba(255,255,255,0.02));
+}
+
+.assessment-heading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.assessment-heading h3 {
+  margin: 0;
+  color: #fff;
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.assessment-heading p:not(.eyebrow) {
+  margin: 0.55rem auto 0;
+  max-width: 720px;
+  color: rgba(235, 226, 241, 0.78);
+}
+
+.quiz-question {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(220, 202, 240, 0.16);
+  border-radius: 0.9rem;
+  background: rgba(0,0,0,0.18);
+}
+
+.quiz-question legend {
+  padding: 0 0.35rem;
+  color: #f4eafb;
+  font-family: Cinzel, Georgia, serif;
+  font-weight: 700;
+}
+
+.quiz-question label {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.65rem;
+  color: rgba(239, 233, 244, 0.88);
+  background: rgba(255,255,255,0.025);
+  cursor: pointer;
+}
+
+.quiz-question label:hover {
+  background: rgba(159, 93, 193, 0.1);
+}
+
+.quiz-question input {
+  margin-top: 0.2rem;
+  accent-color: #a45ad1;
+}
+
+.admissions-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.admissions-result {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.admissions-result[hidden] {
+  display: none;
+}
+
+.result-seal {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+  border: 2px solid rgba(228, 209, 240, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  font-family: Cinzel, Georgia, serif;
+  font-size: 3rem;
+  box-shadow: inset 0 0 2rem rgba(163, 83, 209, 0.22), 0 0 1.5rem rgba(163, 83, 209, 0.18);
+}
+
+.admissions-result h3 {
+  margin: 0.25rem 0 0.7rem;
+  color: #fff;
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.result-address,
+.result-signature {
+  color: #d7bddf;
+  font-family: Cinzel, Georgia, serif;
+}
+
+.admissions-result > p:not(.eyebrow):not(.result-address):not(.result-signature) {
+  max-width: 780px;
+  margin: 0.8rem auto;
+  color: rgba(242, 235, 246, 0.88);
+  line-height: 1.75;
+}
+
+.result-scores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.4rem auto;
+  max-width: 820px;
+}
+
+.result-scores div {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem;
+  border: 1px solid rgba(220, 202, 240, 0.2);
+  border-radius: 0.85rem;
+  background: rgba(255,255,255,0.035);
+}
+
+.result-scores span {
+  color: #c9a8d4;
+  font-family: Cinzel, Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.result-scores strong {
+  color: #fff;
+  font-weight: 400;
+}
+
+.admissions-result.is-accepted {
+  border-color: rgba(174, 214, 168, 0.35);
+  background: linear-gradient(145deg, rgba(11, 31, 21, 0.94), rgba(25, 13, 38, 0.88));
+}
+
+.admissions-result.is-accepted .result-seal {
+  border-color: rgba(187, 230, 178, 0.62);
+  box-shadow: inset 0 0 2rem rgba(83, 190, 104, 0.18), 0 0 1.5rem rgba(83, 190, 104, 0.18);
+}
+
+.admissions-result.is-rejected {
+  border-color: rgba(218, 111, 111, 0.35);
+  background: linear-gradient(145deg, rgba(43, 9, 17, 0.95), rgba(26, 10, 31, 0.9));
+}
+
+.admissions-back {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: rgba(8, 5, 13, 0.72);
+}
+
+@media (max-width: 760px) {
+  .admissions-screen {
+    background-attachment: scroll;
+  }
+
+  .result-scores {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-actions .enter-button,
+  .admissions-actions .ghost-button {
+    width: 100%;
+  }
+}
