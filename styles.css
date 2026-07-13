@@ -37,7 +37,7 @@ a {
   font: inherit;
 }
 
-section {
+#app > section {
   min-height: 100svh;
   width: 100%;
   display: none;
@@ -45,7 +45,7 @@ section {
   isolation: isolate;
 }
 
-section.active {
+#app > section.active {
   display: grid;
 }
 
