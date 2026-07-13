@@ -88,7 +88,7 @@
             <strong>Faculty</strong>
             <em>Professors of refined monstrosity</em>
           </a>
-          <a href="#" class="hub-card">
+          <a href="#students" class="hub-card" id="studentsCard">
             <span>03</span>
             <strong>Students</strong>
             <em>Young horrors with potential</em>
@@ -452,6 +452,179 @@
         </div>
 
         <button class="ghost-button faculty-back" id="facultyBackButton" type="button">Return to Orientation Hall</button>
+      </div>
+    </section>
+
+    <section class="students-screen" id="students" aria-label="First-year students of The Nightshade Academy">
+      <div class="students-shell">
+        <header class="students-header students-overview">
+          <p class="eyebrow">First-Year Students</p>
+          <h2>The Young Horrors of Nightshade</h2>
+          <p class="students-intro">
+            Meet four first-year students beginning their transformation from raw monstrosity into refined dread.
+          </p>
+
+          <div class="students-roster" role="tablist" aria-label="Student roster">
+            <button class="student-chip is-active" type="button" data-student-button="cassandra" aria-selected="true">
+              Cassandra Gravesong
+              <span>Sapphire Banshee</span>
+            </button>
+            <button class="student-chip" type="button" data-student-button="winston" aria-selected="false">
+              Winston Fangsworth
+              <span>Werewolf</span>
+            </button>
+            <button class="student-chip" type="button" data-student-button="tilly" aria-selected="false">
+              Tilly Patchwell
+              <span>Cursed Patchwork Doll</span>
+            </button>
+            <button class="student-chip" type="button" data-student-button="lucien" aria-selected="false">
+              Lucien Brimsmoke
+              <span>Demon</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="student-entry active" data-student-entry="cassandra">
+          <header class="student-entry-header">
+            <p class="eyebrow">First-Year Student</p>
+            <h2>Cassandra Gravesong</h2>
+            <p class="student-species">Sapphire Banshee</p>
+          </header>
+
+          <article class="student-profile">
+            <figure class="student-portrait">
+              <img src="assets/images/student-cassandra-gravesong.webp" alt="Cassandra Gravesong, a stylish Sapphire Banshee student, posing in the Nightshade Academy library" />
+            </figure>
+            <div class="student-copy">
+              <p class="student-lede">Beauty, misfortune, and ancestral arrogance have arrived at Nightshade Academy in the form of Cassandra Gravesong.</p>
+              <p>
+                Cassandra descends from a Celtic banshee family whose legacy stretches back millennia. Vain, snobbish, theatrical, and effortlessly unpleasant, she regards newer monsters and magical creations as unfortunate interruptions in supernatural history. Beneath the polished disdain lies genuine power: her voice carries the force of generations, and strong emotion can turn her composure into a devastating spectral outcry.
+              </p>
+              <div class="student-facts" aria-label="Cassandra Gravesong profile highlights">
+                <div><span>Developing abilities</span><strong>Prophetic mourning, death-sense, spectral song, and supernatural vocal force</strong></div>
+                <div><span>Known for</span><strong>Dramatic entrances, ancestral superiority, and making displeasure sound operatic</strong></div>
+                <div><span>Academy reputation</span><strong>Admired from a distance, disliked at close range, and impossible to ignore</strong></div>
+              </div>
+              <blockquote>“Some of us possess a legacy. Others merely possess an enrollment form.”</blockquote>
+            </div>
+          </article>
+
+          <aside class="student-moment" aria-label="Cassandra Gravesong at leisure">
+            <img src="assets/images/student-cassandra-gravesong-lounge.webp" alt="Cassandra Gravesong relaxing in a luxurious blue lounge with desserts and a sapphire drink" />
+            <div>
+              <p class="eyebrow">At Leisure</p>
+              <h3>Misfortune should never be unfashionable.</h3>
+              <p>Cassandra treats every quiet evening as an opportunity to be admired, envied, or both.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="student-entry" data-student-entry="winston">
+          <header class="student-entry-header">
+            <p class="eyebrow">First-Year Student</p>
+            <h2>Winston Fangsworth</h2>
+            <p class="student-species">Werewolf</p>
+          </header>
+
+          <article class="student-profile">
+            <figure class="student-portrait">
+              <img src="assets/images/student-winston-fangsworth.webp" alt="Winston Fangsworth, a sleepy werewolf student, standing in a Nightshade Academy corridor" />
+            </figure>
+            <div class="student-copy">
+              <p class="student-lede">Winston Fangsworth is clever, capable, and spectacularly unwilling to remain awake for any of it.</p>
+              <p>
+                His uniform usually looks as though he slept in it because he usually did. Winston stays awake far too late baying at the moon, wandering the dormitory halls, and claiming that nighttime is when he does his best thinking. He is notorious for dozing through lectures, snoring during examinations, and waking instantly when food is mentioned. Beneath the laziness, however, he understands far more than his teachers suspect.
+              </p>
+              <div class="student-facts" aria-label="Winston Fangsworth profile highlights">
+                <div><span>Developing abilities</span><strong>Enhanced senses, scent tracking, moonlit strength, and controlled werewolf transformation</strong></div>
+                <div><span>Known for</span><strong>Late-night howling, strategic napping, and waking at the sound of a snack wrapper</strong></div>
+                <div><span>Academy reputation</span><strong>Bright, resourceful, and almost completely unmotivated</strong></div>
+              </div>
+              <blockquote>“I wasn’t asleep. I was listening with my eyes closed.”</blockquote>
+            </div>
+          </article>
+
+          <aside class="student-moment" aria-label="Winston Fangsworth after hours">
+            <img src="assets/images/student-winston-fangsworth-after-hours.webp" alt="Winston Fangsworth lounging sleepily in his moonlit dormitory with books and snacks" />
+            <div>
+              <p class="eyebrow">After Hours</p>
+              <h3>Moonlit scholarship, according to Winston.</h3>
+              <p>He claims late-night reading helps him concentrate. The evidence suggests sleeping, eating, and occasional howling.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="student-entry" data-student-entry="tilly">
+          <header class="student-entry-header">
+            <p class="eyebrow">First-Year Scholarship Student</p>
+            <h2>Tilly Patchwell</h2>
+            <p class="student-species">Cursed Patchwork Doll</p>
+          </header>
+
+          <article class="student-profile">
+            <figure class="student-portrait">
+              <img src="assets/images/student-tilly-patchwell.webp" alt="Tilly Patchwell, a shy cursed patchwork doll student, standing in a Nightshade Academy hallway" />
+            </figure>
+            <div class="student-copy">
+              <p class="student-lede">Found abandoned in a castle attic, Tilly Patchwell possesses far more power—and darkness—than her fragile appearance suggests.</p>
+              <p>
+                Once her abilities were discovered, Nightshade Academy offered Tilly a special scholarship and a place among its first-year students. The academy intends to bring out the formidable monster she was meant to become. Tilly is quiet, sensitive, and convinced she was discarded because too little care went into her creation. She forms deep attachments but expects them to end, and her dark magic becomes dangerously unpredictable whenever she feels abandoned.
+              </p>
+              <div class="student-facts" aria-label="Tilly Patchwell profile highlights">
+                <div><span>Developing abilities</span><strong>Curse weaving, pain transfer, toy animation, self-repair, and shadow movement</strong></div>
+                <div><span>Known for</span><strong>Repairing broken things, carrying listening dolls, and assuming kindness cannot last</strong></div>
+                <div><span>Academy reputation</span><strong>Sweet, unsettling, and much more dangerous than she appears</strong></div>
+              </div>
+              <blockquote>“They didn’t finish me because they didn’t want me. I’ll show them what they left behind.”</blockquote>
+            </div>
+          </article>
+
+          <aside class="student-moment" aria-label="Tilly Patchwell in her dormitory">
+            <img src="assets/images/student-tilly-patchwell-dorm.webp" alt="Tilly Patchwell standing in her gothic dormitory with a handmade patchwork doll" />
+            <div>
+              <p class="eyebrow">Behind Closed Doors</p>
+              <h3>A room full of companions who cannot leave.</h3>
+              <p>Tilly cares for repaired dolls and stitched creatures with the tenderness she wishes someone had once shown her.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="student-entry" data-student-entry="lucien">
+          <header class="student-entry-header">
+            <p class="eyebrow">First-Year Student</p>
+            <h2>Lucien Brimsmoke</h2>
+            <p class="student-species">Demon</p>
+          </header>
+
+          <article class="student-profile">
+            <figure class="student-portrait">
+              <img src="assets/images/student-lucien-brimsmoke.webp" alt="Lucien Brimsmoke, a handsome young demon student, seated in a Nightshade Academy classroom" />
+            </figure>
+            <div class="student-copy">
+              <p class="student-lede">Fashionable, charming, and naturally mischievous, Lucien Brimsmoke approaches academy life as a game he is certain he has already mastered.</p>
+              <p>
+                Lucien thinks of himself as exceptionally clever. His actual intelligence is respectable, though not always equal to the elaborate schemes he devises. He routinely overlooks obvious complications, then improvises with such confidence that others briefly assume everything was intentional. For all his vanity and troublemaking, Lucien is fiercely loyal and will not abandon a friend when genuine danger appears.
+              </p>
+              <div class="student-facts" aria-label="Lucien Brimsmoke profile highlights">
+                <div><span>Developing abilities</span><strong>Infernal flame, shadow manifestation, minor summoning, persuasion, and smoke-stepping</strong></div>
+                <div><span>Known for</span><strong>Excellent clothes, elaborate schemes, and smirking immediately before disaster</strong></div>
+                <div><span>Academy reputation</span><strong>Charming, entertaining, and best enjoyed in manageable doses</strong></div>
+              </div>
+              <blockquote>“It was an excellent plan. The unforeseen catastrophe was a separate matter.”</blockquote>
+            </div>
+          </article>
+
+          <aside class="student-moment" aria-label="Lucien Brimsmoke between lessons">
+            <img src="assets/images/student-lucien-brimsmoke-cafe.webp" alt="Lucien Brimsmoke relaxing at the Nightshade Cafe with tea and desserts" />
+            <div>
+              <p class="eyebrow">Between Lessons</p>
+              <h3>Plotting, posing, or pretending to study.</h3>
+              <p>Lucien does some of his finest thinking over expensive desserts, though the quality of the resulting ideas remains disputed.</p>
+            </div>
+          </aside>
+        </div>
+
+        <button class="ghost-button students-back" id="studentsBackButton" type="button">Return to Orientation Hall</button>
       </div>
     </section>
   </main>

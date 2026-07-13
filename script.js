@@ -2,6 +2,7 @@ const landing = document.getElementById("landing");
 const intro = document.getElementById("intro");
 const hub = document.getElementById("hub");
 const faculty = document.getElementById("faculty");
+const students = document.getElementById("students");
 
 const enterButton = document.getElementById("enterButton");
 const backButton = document.getElementById("backButton");
@@ -9,6 +10,10 @@ const orientationButton = document.getElementById("orientationButton");
 const hubBackButton = document.getElementById("hubBackButton");
 const facultyCard = document.getElementById("facultyCard");
 const facultyBackButton = document.getElementById("facultyBackButton");
+const studentsCard = document.getElementById("studentsCard");
+const studentsBackButton = document.getElementById("studentsBackButton");
+const studentButtons = document.querySelectorAll("[data-student-button]");
+const studentEntries = document.querySelectorAll("[data-student-entry]");
 const facultyButtons = document.querySelectorAll("[data-faculty-button]");
 const facultyEntries = document.querySelectorAll("[data-faculty-entry]");
 const introNarration = document.getElementById("introNarration");
@@ -36,8 +41,24 @@ function switchFaculty(facultyId) {
   });
 }
 
+
+function switchStudent(studentId) {
+  if (!studentId) return;
+
+  studentButtons.forEach((button) => {
+    const isActive = button.dataset.studentButton === studentId;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-selected", String(isActive));
+  });
+
+  studentEntries.forEach((entry) => {
+    const isActive = entry.dataset.studentEntry === studentId;
+    entry.classList.toggle("active", isActive);
+  });
+}
+
 function showScreen(screen) {
-  [landing, intro, hub, faculty].forEach((section) => {
+  [landing, intro, hub, faculty, students].forEach((section) => {
     section.classList.remove("active");
   });
 
@@ -144,6 +165,21 @@ facultyButtons.forEach((button) => {
   button.addEventListener("click", () => switchFaculty(button.dataset.facultyButton));
 });
 
+if (studentsCard) {
+  studentsCard.addEventListener("click", (event) => {
+    event.preventDefault();
+    showScreen(students);
+  });
+}
+
+if (studentsBackButton) {
+  studentsBackButton.addEventListener("click", () => showScreen(hub));
+}
+
+studentButtons.forEach((button) => {
+  button.addEventListener("click", () => switchStudent(button.dataset.studentButton));
+});
+
 if (audioToggle) {
   audioToggle.addEventListener("click", () => {
     narrationEnabled = !narrationEnabled;
@@ -194,5 +230,6 @@ if (musicCrankButton) {
 }
 
 switchFaculty("elaine");
+switchStudent("cassandra");
 updateAudioButton();
 updateMusicButtons();
