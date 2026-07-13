@@ -1427,6 +1427,14 @@ h2 {
   border-radius: 0.8rem;
 }
 
+
+.student-moment img.student-moment-portrait {
+  max-height: 640px;
+  object-fit: contain;
+  object-position: top center;
+  background: rgba(8, 10, 18, 0.72);
+}
+
 .student-moment h3 {
   margin: 0.3rem 0 0.7rem;
   color: #fff;
