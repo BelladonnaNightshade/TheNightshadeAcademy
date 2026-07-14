@@ -1932,3 +1932,11 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+.anthem-video-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-color: rgba(191, 159, 255, 0.54);
+}
